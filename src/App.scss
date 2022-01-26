@@ -7,20 +7,51 @@ $medium: 700px;
 $large: 1500px;
 
 @import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;800&display=swap";
-
-body{
-    font-family: 'Kumbh Sans', sans-serif;
-    background-color: $lightColour;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-nav{
+.toggle-mode{
+    
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    font-size: 2.5rem;
+}
+
+.App-dark,
+.App-light{
+    font-family: 'Kumbh Sans', sans-serif;
+    transition: 0.3s;
+    margin: 0;
+    padding: 5%;
+}
+.App-light{
+    background-color: $lightColour;
+    color: $darkColour;
+}
+.App-dark{
     background-color: $darkColour;
+    color: $lightColour;
+}
+
+.nav-dark,
+.nav-light{
     width: 80%;
     border-radius: 25px;
     height: 60px;
     margin: auto;
+}
 
+.nav-dark{
+    
+    color: $lightColour;
    
+}
+.nav-light{
+    background-color: $lightColour;
+    color: $darkColour;
 }
 
 ul{
@@ -44,7 +75,7 @@ ul{
 li{
     text-decoration: none;
     list-style: none;
-    color: $lightColour;
+    
     line-height: 60px;
     font-weight: 500;
     text-align: center;
@@ -68,40 +99,157 @@ li{
 
 
 
+
+
 //  --------------  Content     ------------ //
 
 .content{
-    width: 80%;
+    width: 85%;
     margin: auto;
+    padding: 5%;
     
+    
+}
+
+.content-section{
+    margin-bottom: 25%;
 }
 
 .about-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
 }
 
 #photo{
+
+    #photo-bg{
+        margin:auto;
+        margin-top: 40%;
+        border-radius: 10%;
+        width: 230px;
+        height: 300px;
+        background-color: rgb(220, 220, 220);
+        
+        
+    }
    
-    padding: 10%;
+    img{
+     height: 100%;
+     width: 100%;
+     border-radius: 9%;
+     
+     
+     }
     
 }
 
 #about-me-text{
     
-    padding-top: 30%;
+    padding-top: 20%;
+    padding-left: 10%;
+    
+    width: 90%;
+    
 
     h2{
         font-size: 1.8rem;
-    }
-    h3{
-        font-weight: 300;
-        margin-top: -20px;
+        padding-bottom: 2%;
+        
     }
     p{
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 300;
+        padding-bottom: 2%;
+        
+    }
+
+    ul{
+        padding-top: 10%;
+        width: 100%;
+        position: static;
     }
     
+}
+
+
+    
+    
+
+
+
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    
+    
+}
+
+
+.project{
+    width: 70%;
+    height: 150px;
+    margin-bottom: 10%;
+    
+    padding: 10%;
+    border: 2px solid rgb(235, 235, 235, 0.5);
+    border-radius: 10px;
+
+    li{
+        display: inline;
+        margin-right: 10%;
+    }
+
+    span{
+        padding-right: 10%;
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+
+
+.contact-page{
+    padding: 10%;
+    text-align: center;
+
+    p{
+        padding: 5%;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.link-container{
+    padding: 5%;
+
+    span{
+        padding: 5%;
+    }
+}
+
+.footer-dark,
+.footer-light{
+    text-align: center;
+    position: relative;
+    height: 200px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 0;
+
+    p{
+        padding: 10%;
+    }
+}
+
+.footer-dark{
+    background-color: $lightColour;
+    color: $darkColour;
+}
+
+.footer-light{
+    background-color: $darkColour;
+    color: $lightColour;
 }

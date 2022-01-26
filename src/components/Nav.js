@@ -1,8 +1,11 @@
 import React from 'react';
+import { useTheme } from '../hooks/useTheme';
 
 const Nav = () => {
+
+    const { mode} = useTheme()
     return (
-        <nav>
+        <nav className={`nav-${mode}`}>
             <ul>
                 <li>About</li>
                 <li>Skills</li>

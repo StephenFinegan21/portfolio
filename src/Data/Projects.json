@@ -1,0 +1,30 @@
+{
+    "Projects" :[ 
+        
+        {
+            "name": "myCrypto Tracker",
+            "description": "A Full stack application built with React JS And Firebase. Allows users to create a portfolio To record and track  their crypto purchases.",
+            "tools": ["React", "Firebase", "Redux", "Sass"]
+        },
+        
+        {
+            "name": "Workout App",
+            "description": "A Full stack application built with Ruby on Rails. Allows users to create a workout plan for clients, Edit client details, exercises and workout plans.",
+            "tools": ["Ruby", "Rails", "CSS"]
+        },
+       
+        {
+            "name": "Job Search Site",
+            "description": "Simple site which takes job data from a JSON file, Allows users to search by location or job information.",
+            "tools": ["React", "JSON", "Tailwind", "JS"]
+        },
+    
+        {
+            "name": "Newlane FC",
+            "description": "Simple Website for a local football team called Newlane FC, built with React JS.",
+            "tools": ["Next.js ", "CSS", "JSON"]
+        }
+
+    ]
+
+}
