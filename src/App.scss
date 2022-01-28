@@ -3,21 +3,38 @@ $lightColour: #FFFDFB;
 
 
 
-$medium: 700px;
+$medium: 900px;
 $large: 1500px;
 
 @import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;800&display=swap";
+
+//  --------------  General Styling     ------------ //
 *{
     margin: 0;
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+//  --------------  Dark/Light mode toggle     ------------ //
 .toggle-mode{
-    
     position: fixed;
     left: 5%;
-    top: 5%;
-    font-size: 2.5rem;
+    top: 4.5%;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    @media screen and (min-width: $large) {
+        font-size: 2rem;
+    }
 }
 
 .App-dark,
@@ -36,64 +53,57 @@ $large: 1500px;
     color: $lightColour;
 }
 
+
+
+
+//  --------------  Navigation    ------------ //
 .nav-dark,
 .nav-light{
     width: 80%;
-    border-radius: 25px;
-    height: 60px;
     margin: auto;
 }
 
 .nav-dark{
-    
     color: $lightColour;
-   
 }
 .nav-light{
-    background-color: $lightColour;
-    color: $darkColour;
+     color: $darkColour;
 }
 
-ul{
-    width: 80%;
+.nav-list{
+    width: 100%;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
-
     @media screen and (min-width: $medium) {
         width: 50%;
         position: relative;
         left: 40%;
     }
-    @media screen and (min-width: $large) {
-        width: 35%;
-        position: relative;
-        left: 60%;
-    }
+   
 }
 
-li{
-    text-decoration: none;
-    list-style: none;
+.nav-item{
     
-    line-height: 60px;
     font-weight: 500;
     text-align: center;
-    font-size: .8rem;
+    font-size: .9rem;
+    cursor: pointer;
+
+
     @media screen and (min-width: $large) {
         font-size: 1rem;
+        transform: translate(0, -60px);
     }
 }
 
-#cv-button{
-    background-color: $lightColour;
-    color: $darkColour;
-    height: 30px;
-    line-height: 30px;
-    margin-top: 15px;
-    border-radius: 10px;
-    
-}
+
+
+
+
+
+
 
 
 
@@ -107,82 +117,87 @@ li{
     width: 85%;
     margin: auto;
     padding: 5%;
-    
-    
+
+    @media screen and (min-width: $large) {
+        width: 60%;
+    }
 }
 
 .content-section{
-    margin-bottom: 25%;
-}
+    margin-bottom: 30%;
+    margin-top: 20%;
 
-.about-grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 100%;
-}
-
-#photo{
-
-    #photo-bg{
-        margin:auto;
-        margin-top: 40%;
-        border-radius: 10%;
-        width: 230px;
-        height: 300px;
-        background-color: rgb(220, 220, 220);
-        
-        
+    @media screen and (min-width: $large) {
+        margin-top: 5%;
     }
+}
+
+h2{
+    font-size: 2.2rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+
+.about-me-text{
+    width: 60%; 
+   margin: auto;
+   margin-bottom: 200px;
    
-    img{
-     height: 100%;
-     width: 100%;
+}
+
+.photo{
+   img{
+    
+     width: 10%;
      border-radius: 9%;
-     
-     
-     }
-    
+     transform: translate(12rem, 50px);
+     display: none;
+
+        @media screen and (min-width: $medium) {
+            display: block;
+        }
+        @media screen and (min-width: $large) {
+            transform: translate(15rem, 50px);
+         }
+    }
 }
-
-#about-me-text{
+   
     
-    padding-top: 20%;
-    padding-left: 10%;
-    
-    width: 90%;
+  
     
 
-    h2{
-        font-size: 1.8rem;
-        padding-bottom: 2%;
-        
-    }
-    p{
-        font-size: .9rem;
-        font-weight: 300;
-        padding-bottom: 2%;
-        
-    }
-
-    ul{
-        padding-top: 10%;
-        width: 100%;
-        position: static;
-    }
-    
-}
 
 
     
     
 
-
+//  --------------  Project Section     ------------ //
 
 
 .project-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+
+    @media screen and (min-width: $medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+    }
     
     
 }
@@ -190,12 +205,16 @@ li{
 
 .project{
     width: 70%;
-    height: 150px;
+    height: 220px;
+    margin: auto;
     margin-bottom: 10%;
+    background-color: rgb(133, 133, 133, 0);
     
     padding: 10%;
     border: 2px solid rgb(235, 235, 235, 0.5);
     border-radius: 10px;
+
+  
 
     li{
         display: inline;
@@ -207,9 +226,64 @@ li{
         position: relative;
         bottom: 15px;
     }
+
+    p{
+        text-align: left;
+        font-size: .9rem;
+        padding-top: 2%;
+    }
+}
+
+.project:hover{
+    background-color: rgb(235, 235, 235, 0.5);
+    
 }
 
 
+
+
+
+
+//  --------------  Skills Section     ------------ //
+
+.skills-list{
+    margin-bottom: 50%;
+    margin-top: 50%;
+    width: 80%;
+    margin: auto;
+    margin-left: 10%;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .skill-item{
+        width: 60%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    img{
+        max-width: 50px;
+        margin-left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//  --------------  Contact Section    ------------ //
 
 .contact-page{
     padding: 10%;
@@ -230,12 +304,15 @@ li{
     }
 }
 
+
+
+
+
+//  --------------  Contact    ------------ //
+
 .footer-dark,
 .footer-light{
     text-align: center;
-    position: relative;
-    height: 200px;
-    border-radius: 50px;
     position: relative;
     bottom: 0;
 
@@ -245,11 +322,12 @@ li{
 }
 
 .footer-dark{
-    background-color: $lightColour;
-    color: $darkColour;
+    
+    color: $lightColour;
 }
 
 .footer-light{
-    background-color: $darkColour;
-    color: $lightColour;
+    
+   
+    color: $darkColour;
 }

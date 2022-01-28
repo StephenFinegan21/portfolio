@@ -1,0 +1,44 @@
+{
+    "tools" :[ 
+        
+        {
+            "name": "Javascript",
+            "description": "../assets/tools-images/Javascript.png"
+        },
+        {
+            "name": "React",
+            "description": "../assets/tools-images/react.png"
+        },
+        {
+            "name": "HTML",
+            "description": "../assets/tools-images/htmlcss.png"
+        },
+        {
+            "name": "Git",
+            "description": "../assets/tools-images/git.png"
+        },
+        {
+            "name": "Sass",
+            "description": "../assets/tools-images/sass.png"
+        },
+        {
+            "name": "Adobe-XD",
+            "description": "../assets/tools-images/xd.png"
+        },
+        {
+            "name": "Java",
+            "description": "../assets/tools-images/java.png"
+        },
+        {
+            "name": "Rails",
+            "description": "../assets/tools-images/rails.png"
+        },
+        {
+            "name": "Firebase",
+            "description": "../assets/tools-images/firebase.png"
+        }
+      
+
+    ]
+
+}

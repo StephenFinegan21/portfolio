@@ -8,13 +8,13 @@ import Footer from './components/Footer';
 
 
 function App() {
-  const { mode} = useTheme()
+  const { mode} = useTheme() //Context gets wwhether currently in light or dark
   
   return (
     <div className={`App-${mode}`}>
        <Nav />
        <Content />
-     
+      <Footer />
        
     </div>
   );

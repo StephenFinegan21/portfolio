@@ -8,13 +8,15 @@ const ProjectGrid = () => {
     <>
     <div className='content-section'>
      <h2>My Work</h2>
-    <div className='project-grid'>
+    <div className='project-grid' id='projects'>
       {ProjectList.map( (project, index) => 
       <Project 
-        key={project.index}
+        key={index}
         name = {project.name}
         description = {project.description}
         tools = {project.tools}
+        github = {project.github}
+        siteLink = {project.siteLink}
       />
 
       )}

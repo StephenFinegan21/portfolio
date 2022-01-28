@@ -4,20 +4,22 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ModeSwitch = () => {
     const {changeMode, mode} = useTheme()
-    const [showSun, setShowSun] = useState(false)
-
+    
+    /* 
+    * When either sun or moon is clicked
+    * check what current 'mode' is 
+    * use changeMode to change it to the opposite
+    */
     const toggleMode = () => {
         if(mode === 'light'){
             changeMode( 'dark' )
-            setShowSun(false)
         }
         else{
             changeMode('light')
-            setShowSun(true)
         }
      }
 
-  
+     //Conditionally render either the sun or the moon icon
   return(
         <div className='toggle-mode'>
             {mode === 'light' &&   <FaMoon onClick={toggleMode}/> }
