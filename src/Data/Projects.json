@@ -21,7 +21,8 @@
             "name": "Job Search Site",
             "description": "Simple site which takes job data from a JSON file, Allows users to search by location or job information.",
             "tools": ["React", "JSON", "Tailwind", "JS"],
-            "github" : "https://github.com/StephenFinegan21/devjobs"
+            "github" : "https://github.com/StephenFinegan21/devjobs",
+            "siteLink" : "https://zen-carson-c05745.netlify.app/"
         },
     
         {

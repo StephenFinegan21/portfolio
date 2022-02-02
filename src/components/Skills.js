@@ -17,27 +17,23 @@ const Skills = () => {
             <p>Some of the technologies I have experience with are:</p>
            
                 <ul className='skills-list'>
-                    {skillList.map((skill, index ) => 
-                     <>
-                        <div className='skill-item'>
+                    {skillList.map((skill ) => 
+                     
+                        <div 
+                        key={skill.id}
+                        className='skill-item'>
                        
-                        <li key={index}>
+                        <li >
                             {skill.name}
                         </li>
-                        <img src =  {images(`./${skill.name}.png`)} className='skill-logo' />  
+                        <img src =  {images(`./${skill.name}.png`)} className='skill-logo' alt={skill.name} />  
                         </div>
                         
-                        {/*console.log(`images(./${skill.name}.png)`)}
-                        {console.log(images(`./Javascript.png`))}
-                    {console.log(images(`./${skill.name}.png`))*/}
-
-                       
-                        
-                    </>  
-                
-                
                     )}
-                  
+                   
+                  {/*console.log(`images(./${skill.name}.png)`)}
+                    {console.log(images(`./Javascript.png`))}
+                    {console.log(images(`./${skill.name}.png`))*/}
                  </ul>
             
         </div>

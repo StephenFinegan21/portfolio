@@ -1,20 +1,21 @@
-import React from 'react';
-import { useTheme } from '../hooks/useTheme';
+import {React} from 'react';
+
 import stephen from '../assets/ste.png'
+
 
 
 const About = () => {
 
-    
-
+  
   return (
       <>
       <div className='content-section'>
         <div className='about-grid' id='about'>
             <div className='photo'>
-                <img src={stephen}></img>
+                <img src={stephen} alt='stephen'></img>
             </div>
-            <div class='about-me-text'>
+           
+            <div className='about-me-text'>
                 <h2>About Me</h2>
                     <p>Hello, my name is Stephen Finegan and I am a junior web developer
                         from Dublin, ireland.</p>
@@ -24,6 +25,8 @@ const About = () => {
                         Software or web development. 
                     </p>
              </div>
+         
+            
         </div>
     </div>
             </>

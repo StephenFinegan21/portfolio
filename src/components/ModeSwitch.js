@@ -21,7 +21,7 @@ const ModeSwitch = () => {
 
      //Conditionally render either the sun or the moon icon
   return(
-        <div className='toggle-mode'>
+        <div className={mode === 'light' ? 'toggle-mode-light' : 'toggle-mode-dark'}>
             {mode === 'light' &&   <FaMoon onClick={toggleMode}/> }
             {mode === 'dark' &&    <FaSun onClick={toggleMode}/>  }
          </div>
