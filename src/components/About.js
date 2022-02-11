@@ -2,8 +2,8 @@ import {React} from 'react';
 
 
 
-import { motion, useViewportScroll } from "framer-motion"
-import useWindowDimensions from '../hooks/useWindowDimensions';
+import { motion } from "framer-motion"
+//import useWindowDimensions from '../hooks/useWindowDimensions';
 
 
 
