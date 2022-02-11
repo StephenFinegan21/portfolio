@@ -1,7 +1,7 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 
 
-import Animation from './Animation';
+
 import { motion, useViewportScroll } from "framer-motion"
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
@@ -12,11 +12,8 @@ import useWindowDimensions from '../hooks/useWindowDimensions';
 
 const About = (props) => {
 
-    const { height, width } = useWindowDimensions();
-    const { scrollYProgress } = useViewportScroll()
-
-    
-
+    //const {  width } = useWindowDimensions();
+    //const { scrollYProgress } = useViewportScroll()
     //console.log(width)
     //console.log(scrollYProgress.current)
     //scrollYProgress.onChange(console.log('test'))

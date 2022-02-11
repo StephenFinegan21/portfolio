@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { motion, useViewportScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Contact = () => {
   return (

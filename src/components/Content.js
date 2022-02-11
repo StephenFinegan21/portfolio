@@ -4,8 +4,7 @@ import ModeSwitch from './ModeSwitch';
 import ProjectGrid from './ProjectGrid';
 import Contact from './Contact';
 import Skills from './Skills';
-import Animation from './Animation';
-import Loader from './Loader';
+
 
 const Content = () => {
     return (

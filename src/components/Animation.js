@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import { motion, useViewportScroll, scrollYProgress, useTransform } from "framer-motion"
 
@@ -23,3 +24,4 @@ const Animation = () => {
 }
 
 export default Animation
+*/
