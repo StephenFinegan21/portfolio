@@ -1,21 +1,49 @@
-import {React} from 'react';
-
-import stephen from '../assets/ste.png'
+import {React, useState} from 'react';
 
 
+import Animation from './Animation';
+import { motion, useViewportScroll } from "framer-motion"
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
-const About = () => {
 
+
+
+
+
+const About = (props) => {
+
+    const { height, width } = useWindowDimensions();
+    const { scrollYProgress } = useViewportScroll()
+
+    
+
+    //console.log(width)
+    //console.log(scrollYProgress.current)
+    //scrollYProgress.onChange(console.log('test'))
+      
   
   return (
       <>
       <div className='content-section'>
         <div className='about-grid' id='about'>
-            <div className='photo'>
-                <img src={stephen} alt='stephen'></img>
-            </div>
+            <motion.div 
+                className='about-me-text' 
+                initial={{
+                    opacity:0,
+                    y:200
+                }}   
+                
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        delay: 0.3,
+                      },
+                    
+                  }}
            
-            <div className='about-me-text'>
+            >
+               
                 <h2>About Me</h2>
                     <p>Hello, my name is Stephen Finegan and I am a junior web developer
                         from Dublin, ireland.</p>
@@ -24,11 +52,19 @@ const About = () => {
                     <p>At the moment i'm seeking any junior or entry level roles in 
                         Software or web development. 
                     </p>
-             </div>
+            </motion.div> 
+        
+            
+             
+
+             
+    
+  
          
             
         </div>
     </div>
+    
             </>
         
   )

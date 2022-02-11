@@ -1,10 +1,15 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { motion, useViewportScroll } from "framer-motion"
 
 const Contact = () => {
   return (
         <div className='content-section'>
-            <div className='contact-page' id='contact'>
+            
+            <motion.div  className='contact-page' id='contact'
+             initial={{ opacity: 0 }}
+             whileInView={{ opacity: 1 }}
+             viewport={{ once: true }}>
                 <h2>Contact</h2>
                     <p>If you would like to get in touch you can do so through
                     Github, linkedin or by filling out the form below.
@@ -23,8 +28,11 @@ const Contact = () => {
                         <input type="textarea" name="message" placeholder='Message' required />
                         <input type="submit" value="Submit" />
                     </form>
+                </motion.div>
             </div>
-        </div>
+          
+       
+ 
   )
 };
 

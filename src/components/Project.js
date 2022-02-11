@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLink  } from 'react-icons/fa';
 
+
  const Project = ({ name, description, tools, github, siteLink}) => {
   return (
     <div className='project' id='project'>

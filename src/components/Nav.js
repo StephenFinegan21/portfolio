@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../hooks/useTheme';
+import { motion } from "framer-motion"
 
 const Nav = () => {
 
@@ -12,12 +13,25 @@ const Nav = () => {
     }
     
     return (
-        <nav className={`nav-${mode}`}>
+        <nav className={`nav-${mode}`}
+       >
             <ul className='nav-list'>
-                <li className='nav-item' onClick={() => scroll('about')}>About</li>
-                <li className='nav-item' onClick={() => scroll('skills')}>Skills</li>
-                <li className='nav-item' onClick={() => scroll('projects')}>Projects</li>
-                <li className='nav-item' onClick={() => scroll('contact')}>Contact</li>
+                <motion.li 
+                    whileHover={{ scale: 1.1, color:'#eb4431'}}
+                    className='nav-item' onClick={() => scroll('about')}>About
+                </motion.li>
+                <motion.li 
+                    whileHover={{ scale: 1.1, color:'#eb4431'}}
+                    className='nav-item' onClick={() => scroll('skills')}>Skills
+                </motion.li>
+                <motion.li 
+                 whileHover={{ scale: 1.1, color:'r#eb4431ed'}}
+                    className='nav-item' onClick={() => scroll('projects')}>Projects
+                </motion.li>
+                <motion.li 
+                     whileHover={{ scale: 1.1, color:'#eb4431'}}
+                    className='nav-item' onClick={() => scroll('contact')}>Contact
+                </motion.li>
                 
             </ul>
         </nav>
