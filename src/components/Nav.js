@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../hooks/useTheme';
-import { motion } from "framer-motion"
+
 
 const Nav = () => {
 
