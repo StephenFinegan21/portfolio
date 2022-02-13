@@ -23,7 +23,7 @@ const ModeSwitch = () => {
      //Conditionally render either the sun or the moon icon
   return(
         <motion.div 
-             whileHover={{ scale: 1.2, rotate: 360 }}
+             whileHover={{ scale: 1.2 }}
             whileTap={{
             scale: 0.8,
             rotate: 360,

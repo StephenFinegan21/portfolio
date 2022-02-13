@@ -28,9 +28,10 @@
         },
         {
             "id" : 6,
-            "name": "Adobe-XD",
-            "description": "../assets/tools-images/xd.png"
+            "name": "Graph-QL",
+            "description": "../assets/tools-images/graphql.png"
         },
+       
         {
             "id" : 7,
             "name": "Java",
@@ -45,6 +46,11 @@
             "id" : 9,
             "name": "Firebase",
             "description": "../assets/tools-images/firebase.png"
+        },
+        {
+            "id" : 10,
+            "name": "Adobe-XD",
+            "description": "../assets/tools-images/xd.png"
         }
       
 
