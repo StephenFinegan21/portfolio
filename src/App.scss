@@ -105,6 +105,7 @@ li{
     font-size: .9rem;
     cursor: pointer;
     color: $darkColour;
+    transition: ease-in 0.1s;
 
     @media screen and (min-width: $medium) {
         font-size: 1.1rem;
@@ -124,8 +125,9 @@ li{
 }
 
 .nav-item:hover{
-    color: #169477;
-    text-decoration: underline;
+    
+    
+    transform: scale(1.1);
 }
 
 
