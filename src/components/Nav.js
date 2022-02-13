@@ -16,22 +16,22 @@ const Nav = () => {
         <nav className={`nav-${mode}`}
        >
             <ul className='nav-list'>
-                <motion.li 
-                    whileHover={{ scale: 1.1}}
+                <li 
+                    
                     className='nav-item' onClick={() => scroll('about')}>About
-                </motion.li>
-                <motion.li 
-                    whileHover={{ scale: 1.1}}
+                </li>
+                <li 
+                    
                     className='nav-item' onClick={() => scroll('skills')}>Skills
-                </motion.li>
-                <motion.li 
-                 whileHover={{ scale: 1.1}}
+                </li>
+                <li 
+                 
                     className='nav-item' onClick={() => scroll('projects')}>Projects
-                </motion.li>
-                <motion.li 
-                     whileHover={{ scale: 1.1}}
+                </li>
+                <li 
+                    
                     className='nav-item' onClick={() => scroll('contact')}>Contact
-                </motion.li>
+                </li>
                 
             </ul>
         </nav>
