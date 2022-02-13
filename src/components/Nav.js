@@ -17,19 +17,19 @@ const Nav = () => {
        >
             <ul className='nav-list'>
                 <motion.li 
-                    whileHover={{ scale: 1.1, color:'#eb4431'}}
+                    whileHover={{ scale: 1.1}}
                     className='nav-item' onClick={() => scroll('about')}>About
                 </motion.li>
                 <motion.li 
-                    whileHover={{ scale: 1.1, color:'#eb4431'}}
+                    whileHover={{ scale: 1.1}}
                     className='nav-item' onClick={() => scroll('skills')}>Skills
                 </motion.li>
                 <motion.li 
-                 whileHover={{ scale: 1.1, color:'r#eb4431ed'}}
+                 whileHover={{ scale: 1.1}}
                     className='nav-item' onClick={() => scroll('projects')}>Projects
                 </motion.li>
                 <motion.li 
-                     whileHover={{ scale: 1.1, color:'#eb4431'}}
+                     whileHover={{ scale: 1.1}}
                     className='nav-item' onClick={() => scroll('contact')}>Contact
                 </motion.li>
                 
