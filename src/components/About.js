@@ -43,7 +43,7 @@ const About = (props) => {
                
                 <h2>About Me</h2>
                     <p>Hello, my name is Stephen Finegan and I am a junior web developer
-                        from Dublin, ireland.</p>
+                        from Dublin, Ireland.</p>
                     <p>I've recently graduated with a first class honours, Higher Diploma
                         in Computing from the National College of Ireland.</p>
                     <p>At the moment i'm seeking any junior or entry level roles in 
