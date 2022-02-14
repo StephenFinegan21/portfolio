@@ -16,6 +16,13 @@
             "github" : "https://github.com/StephenFinegan21/TrainerApp",
             "siteLink" : "https://nci-trainer-app.herokuapp.com/users/sign_in"
         },
+        {
+            "name": "TypeSeek",
+            "description": "Currently working on site that allows users to browse different fonts and gives them a description of the fonts history and how best to use it.",
+            "tools": ["Next.js", "React", "GraphQL", "Tailwind"],
+            "github" : "https://github.com/StephenFinegan21/TypeSeek",
+            "siteLink" : "https://typeseek.netlify.app/"
+        },
        
         {
             "name": "Job Search Site",

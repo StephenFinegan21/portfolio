@@ -71,6 +71,9 @@ li{
 .nav-light{
     width: 80%;
     margin: auto;
+    
+
+   
 }
 
 .nav-dark{
@@ -115,7 +118,7 @@ li{
 
     @media screen and (min-width: $large) {
         font-size: 1.3rem;
-        transform: translate(0, -60px);
+        
 
        
     }
@@ -128,6 +131,7 @@ li{
     
     
     transform: scale(1.1);
+
 }
 
 
