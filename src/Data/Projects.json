@@ -10,20 +10,12 @@
         },
         
         {
-            "name": "Workout App",
-            "description": "A Full stack application built with Ruby on Rails. Allows users to create a workout plan for clients, Edit client details, exercises and workout plans.",
-            "tools": ["Ruby", "Rails", "CSS"],
-            "github" : "https://github.com/StephenFinegan21/TrainerApp",
-            "siteLink" : "https://nci-trainer-app.herokuapp.com/users/sign_in"
+            "name": "Shopify E-commerce Store",
+            "description": "Designed and developed an e-commerce site linked to Shopify",
+            "tools": ["React", "Shopify", "Tailwind", "Javascript"],
+            "github" : "https://github.com/StephenFinegan21/reactshopifystore",
+            "siteLink" : "https://shopifybreeze.netlify.app/"
         },
-        {
-            "name": "TypeSeek",
-            "description": "Currently working on site that allows users to browse different fonts and gives them a description of the fonts history and how best to use it.",
-            "tools": ["Next.js", "React", "GraphQL", "Tailwind"],
-            "github" : "https://github.com/StephenFinegan21/TypeSeek",
-            "siteLink" : "https://typeseek.netlify.app/"
-        },
-       
         {
             "name": "Job Search Site",
             "description": "Simple site which takes job data from a JSON file, Allows users to search by location or job information.",
@@ -38,6 +30,13 @@
             "tools": ["Next.js ", "CSS", "JSON"],
             "github" : "https://github.com/StephenFinegan21/Newlane-Fc-Project",
             "siteLink" : "https://newlanefc.netlify.app"
+        },
+        {
+            "name": "TypeSeek",
+            "description": "Currently working on site that allows users to browse different fonts and gives them a description of the fonts history and how best to use it.",
+            "tools": ["Next.js", "React", "GraphQL", "Tailwind"],
+            "github" : "https://github.com/StephenFinegan21/TypeSeek",
+            "siteLink" : "https://typeseek.netlify.app/"
         }
 
     ]

@@ -13,8 +13,7 @@ const Nav = () => {
     }
     
     return (
-        <nav className={`nav-${mode}`}
-       >
+        <nav className={`nav-${mode}`}>
             <ul className='nav-list'>
                 <li 
                     

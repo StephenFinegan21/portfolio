@@ -5,11 +5,6 @@ import {React} from 'react';
 import { motion } from "framer-motion"
 //import useWindowDimensions from '../hooks/useWindowDimensions';
 
-
-
-
-
-
 const About = (props) => {
 
     //const {  width } = useWindowDimensions();
@@ -17,8 +12,7 @@ const About = (props) => {
     //console.log(width)
     //console.log(scrollYProgress.current)
     //scrollYProgress.onChange(console.log('test'))
-      
-  
+    
   return (
       <>
       <div className='content-section'>
@@ -41,24 +35,10 @@ const About = (props) => {
            
             >
                
-                <h2>About Me</h2>
-                    <p>Hello, my name is Stephen Finegan and I am a junior web developer
-                        from Dublin, Ireland.</p>
-                    <p>I've recently graduated with a first class honours, Higher Diploma
-                        in Computing from the National College of Ireland.</p>
-                    <p>At the moment i'm seeking any junior or entry level roles in 
-                        Software or web development. 
-                    </p>
+                <h2>Stephen Finegan</h2>
+                    <p>Frontend developer living in Dublin, Ireland, skilled in building websites with React</p>
+                    <p>Currently seeking a junior developer role</p>
             </motion.div> 
-        
-            
-             
-
-             
-    
-  
-         
-            
         </div>
     </div>
     
